@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sohail Ahmed - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" name="check" id="check" />
+
+        <div class="logo">
+          <span class="logo-text">
+            <span class="logo-first">Sohail</span>
+            <span class="logo-last">Ahmed</span>
+          </span>
+          <span class="logo-subtitle">Developer</span>
+        </div>
+
+        <ul>
+          <li class="active">
+            <a href="#main"> <i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about"> <i class="fa-solid fa-address-card"></i> About</a>
+          </li>
+          <li>
+            <a href="#skills"> <i class="fa-solid fa-brain"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#projects">
+              <i class="fa-solid fa-list-check"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="#experience">
+              <i class="fa-solid fa-briefcase"></i> Experience</a
+            >
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="fa-solid fa-square-phone"></i> Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-btn">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+
+        <label for="check" class="optionBar"><i class="fa fa-bars"></i></label>
+      </nav>
+    </header>
+
+    <div id="loading">
+      <div class="loading-content">
+        <img src="./images/loading.gif" alt="Loading" />
+        <div class="loading-text">Loading Portfolio...</div>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="home" data-aos="fade-up">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div
+              class="profile-section"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="profile-image-container">
+                <img
+                  src=""
+                  alt="Sohail Ahmed"
+                  id="profileImage"
+                  class="profile-image"
+                />
+                <div class="profile-overlay">
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+              </div>
+            </div>
+            <div class="hero-text">
+              <h1 data-aos="fade-right" data-aos-delay="400">
+                Welcome! I'm
+                <span id="adminName" class="highlight">Sohail Ahmed</span>
+              </h1>
+              <h3
+                id="profession"
+                data-aos="fade-right"
+                data-aos-delay="500"
+              ></h3>
+              <p data-aos="fade-right" data-aos-delay="600">
+                Hello and welcome to my portfolio! I'm from
+                <span id="address" class="highlight">Sindh, Pakistan</span> and
+                I graduated from the
+                <span id="department" class="highlight">Mechanical</span>
+                Department of
+                <span id="universityName" class="highlight">MUET Jamshoro</span
+                >. Here I showcase my web and mobile app development work that
+                demonstrates the essential skills every beginner should master
+                and practice.
+              </p>
+
+              <div class="btnBox" data-aos="fade-up" data-aos-delay="700">
+                <button class="btn-primary">Hire Me</button>
+                <button class="btn-secondary">Let's Talk</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" data-aos="fade-up">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-container skillShadow" id="skills-container">
+          <!-- Skills will be loaded dynamically -->
+        </div>
+        <div
+          class="view-all-container"
+          style="text-align: center; margin-top: 2rem"
+        >
+          <button class="view-all-btn" onclick="showAllSkills()">
+            <i class="fa-solid fa-list"></i> View All Skills
+          </button>
+        </div>
+      </section>
+
+      <section id="projects" data-aos="fade-up">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-cards" id="project-cards">
+          <!-- Projects will be loaded dynamically -->
+        </div>
+        <div
+          class="view-all-container"
+          style="text-align: center; margin-top: 2rem"
+        >
+          <button class="view-all-btn" onclick="showAllProjects()">
+            <i class="fa-solid fa-list"></i> View All Projects
+          </button>
+        </div>
+      </section>
+
+      <section id="experience" data-aos="fade-up">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="experience-container">
+          <div class="experience-card" data-aos="fade-right">
+            <div class="experience-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="experience-content">
+              <h3>Education</h3>
+              <h4 id="universityName">MUET Jamshoro</h4>
+              <p id="department">Mechanical Engineering</p>
+              <span class="year">2019 - 2023</span>
+            </div>
+          </div>
+          <div class="experience-card" data-aos="fade-left">
+            <div class="experience-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="experience-content">
+              <h3>Development Experience</h3>
+              <h4>SMIT Hyderabad</h4>
+              <p>
+                HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js,
+                Firebase, MongoDB
+              </p>
+              <span class="year">2+ Years</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-aos="fade-up">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+          <form class="contact-form" data-aos="fade-left">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea
+              placeholder="Any questions or queries? Please feel free to ask!"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sohail Ahmed. All rights reserved.</p>
+      <div class="links" id="about">
+        <a id="facebook-link" target="_blank" href="#" class="social-link"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a id="firebase-link" target="_blank" href="#" class="social-link"
+          ><i class="fa-solid fa-fire"></i
+        ></a>
+        <a id="linkedin-link" target="_blank" href="#" class="social-link"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a id="github-link" target="_blank" href="#" class="social-link"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
