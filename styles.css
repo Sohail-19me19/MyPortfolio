@@ -973,3 +973,12 @@ section {
   overflow-y: auto;
   height: 100vh;
 }
+.info {
+  font-size: 0.9rem;
+  text-decoration: underline;
+  color: var(--secondary-color);
+  display: inline-block;
+}
+footer span {
+  color: var(--secondary-color);
+}
